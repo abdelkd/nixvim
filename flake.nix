@@ -39,7 +39,7 @@
       in {
         overlays = rec {
           default = nvim;
-          nvim = (final: prev: { nvim = nvimnvim = nvim.packages.${prev.system}.default });
+          nvim = (final: prev: { nvim = nvim; nvim = nvim.packages.${prev.system}.default });
         };
 
         checks = {
