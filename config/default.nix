@@ -9,7 +9,7 @@
     # ./startup.nix
     ./emmet.nix
     ./git.nix
-    ./lsp.nix
+    # ./lsp.nix
     ./lualine.nix
     ./none-ls.nix
     ./nvim-tree.nix
