@@ -27,5 +27,5 @@
     # };
   };
   # plugins.rust-tools.enable = true;
-  plugins.typescript-tools.enable = true;
+  # plugins.typescript-tools.enable = true;
 }
