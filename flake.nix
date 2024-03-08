@@ -37,10 +37,6 @@
         };
         nvim = nixvim'.makeNixvimWithModule nixvimModule;
       in {
-        overlays = rec {
-          default = nvim;
-          nvim = (final: prev: { nvim = nvim; nvim = nvim.packages.${prev.system}.default });
-        };
 
         checks = {
           # Run `nix flake check .` to verify that your config is not broken
@@ -49,10 +45,6 @@
 
         packages = {
           # Lets you run `nix run .` to start nixvim
-          default = nvim;
-        };
-
-        apps = {
           default = nvim;
         };
 
